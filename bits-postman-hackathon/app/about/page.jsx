@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar"
 import Image from "next/image";
 import about_img from "../assests/images/about-us.png"
+import Footer from "../components/Footer.jsx"
 
 const About = () => {
     return (
@@ -23,6 +24,7 @@ const About = () => {
                 <p>Our vision at Prescripto is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.</p>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

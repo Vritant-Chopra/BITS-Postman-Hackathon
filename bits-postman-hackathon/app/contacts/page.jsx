@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Image from "next/image";
 import contact_img from "../assests/images/contact.png"
 import Link from "next/link"
+import Footer from "../components/Footer.jsx"
 
 const Contact = () => {
     return (
@@ -38,6 +39,7 @@ const Contact = () => {
                     </Link>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

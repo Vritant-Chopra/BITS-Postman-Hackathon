@@ -21,7 +21,7 @@ body {
 }
 
 *::selection{
-  color: rgb(241, 136, 136);
+  color: rgb(91, 217, 74);
 }
 
 .page_404 {
@@ -54,6 +54,7 @@ body {
   margin: 20px 0;
   display: inline-block;
 }
+
 .contant_box_404 {
   margin-top: -50px;
 }

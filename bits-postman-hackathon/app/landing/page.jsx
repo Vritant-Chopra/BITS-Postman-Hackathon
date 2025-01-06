@@ -12,6 +12,7 @@ import CountUp from "../../node_modules/react-countup"
 import ScrollTrigger from "react-scroll-trigger";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "../../node_modules/typewriter-effect"
+import Footer from "../components/Footer.jsx"
 
 const Landing = () => {
     const [counterOn, setCounterOn] = useState(false);
@@ -40,11 +41,11 @@ const Landing = () => {
                     </div>
                     <div className="text-xl">
                         <Typewriter options={{
-                            strings: ['Opt for the Healthcare you deserve!','MAX is transforming healthcare','Doctor at your Doorstep!'],
+                            strings: ['Opt for the Healthcare you deserve!', 'MAX is transforming healthcare', 'Doctor at your Doorstep!'],
                             autoStart: true,
                             loop: true,
                             cursor: '|'
-                        }}/>
+                        }} />
                     </div>
                     <Link href="/maps">
                         <button className="bg-[#38b5b7] text-2xl font-mono flex items-center">
@@ -54,14 +55,9 @@ const Landing = () => {
                     </Link>
                 </div>
             </section>
-            <section className="h-[100%] bg-[#2E5077] relative m-0">
-                <div className="text-black font-bold text-center text-4xl p-3 m-3">
-                    OUR PROCESS
-                </div>
-            </section>
             <section
                 ref={ref}
-                className="w-screen h-[20%] bg-white grid grid-cols-4 text-center items-center text-black absolute m-0 p-5"
+                className="w-screen h-[20%] bg-white grid grid-cols-4 text-center items-center text-black m-0 p-5"
             >
                 <div>
                     {counterOn && (
@@ -79,16 +75,21 @@ const Landing = () => {
                     {counterOn && (
                         <CountUp start={0} end={45} duration={2} delay={0} className="font-bold text-3xl font-sans" />
                     )}<span className="text-orange-500 font-bold text-3xl"> mins</span>
-                    <br/>Average Response Time
+                    <br />Average Response Time
                 </div>
                 <div>
                     {counterOn && (
                         <CountUp start={0} end={40} duration={2} delay={0} className="font-bold text-3xl font-sans" />
                     )}<span className="text-orange-500 font-bold text-3xl">+</span>
-                    <br/>Cities
+                    <br />Cities
                 </div>
             </section>
-
+            <section className="h-[100%] bg-[#2E5077] relative m-0">
+                <div className="text-black font-bold text-center text-4xl p-3 m-3">
+                    OUR PROCESS
+                </div>
+            </section>
+            <Footer/>
         </div>
     );
 };
